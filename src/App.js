@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import { env } from './env';
 import './App.css';
 
-const api = {key : '101bc2e3475864316b09ddef39be58d9', base: 'https://api.openweathermap.org/data/2.5/'}
+const api = {key : env.key, base: env.base}
 
 function App() {
   const [city,setCity] = useState('')
